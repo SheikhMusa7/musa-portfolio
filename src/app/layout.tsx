@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,32 +8,38 @@ const inter = Inter({
   display: "swap",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Musa Sheikh | Computer Science Engineer & Entrepreneur",
+  title: "Musa Sheikh | Computer Science Student, Python Developer & Aspiring Entrepreneur",
   description:
-    "20-year-old Computer Science Engineering student passionate about AI, web development, and building impactful technology businesses. Python expert and AI-powered developer.",
+    "Computer Science student, Python developer, and aspiring entrepreneur building AI-powered automation systems, SaaS products, and intelligent digital solutions.",
   keywords: [
     "Musa Sheikh",
-    "Computer Science Engineering",
-    "AI Developer",
     "Python Developer",
+    "AI Automation",
+    "SaaS Development",
+    "Computer Science",
+    "Aspiring Entrepreneur",
     "Web Development",
-    "Entrepreneur",
-    "SSM College of Engineering",
   ],
   authors: [{ name: "Musa Sheikh" }],
   openGraph: {
-    title: "Musa Sheikh | Computer Science Engineer & Entrepreneur",
+    title: "Musa Sheikh | CS Student & Aspiring Entrepreneur",
     description:
-      "Building AI-powered digital experiences. Computer Science Engineering student, Python expert, and future tech founder.",
+      "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Musa Sheikh | Computer Science Engineer & Entrepreneur",
+    title: "Musa Sheikh | CS Student & Aspiring Entrepreneur",
     description:
-      "Building AI-powered digital experiences. Computer Science Engineering student, Python expert, and future tech founder.",
+      "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
   },
   robots: {
     index: true,
@@ -47,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}
       </body>

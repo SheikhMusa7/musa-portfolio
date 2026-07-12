@@ -9,6 +9,7 @@ interface TextRevealProps {
   as?: "h1" | "h2" | "h3" | "h4" | "p" | "span";
   delay?: number;
   stagger?: number;
+  accentWords?: string[];
 }
 
 export default function TextReveal({
@@ -17,6 +18,7 @@ export default function TextReveal({
   as: Tag = "p",
   delay = 0,
   stagger = 0.02,
+  accentWords = [],
 }: TextRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
@@ -27,9 +29,9 @@ export default function TextReveal({
     <div ref={ref} className={className}>
       <Tag className="inline">
         {words.map((word, i) => (
-          <span key={i} className="inline-block overflow-hidden mr-[0.25em]">
+          <span key={i} className="inline-block overflow-hidden mr-[0.25em] align-bottom">
             <motion.span
-              className="inline-block"
+              className={`inline-block ${accentWords.includes(word) ? "gradient-accent" : ""}`}
               initial={{ y: "100%" }}
               animate={isInView ? { y: 0 } : { y: "100%" }}
               transition={{

@@ -49,7 +49,7 @@ export default function MagneticButton({
     primary:
       "bg-accent text-white hover:bg-accent-soft shadow-lg shadow-accent/20",
     secondary:
-      "border border-border text-foreground hover:bg-card-hover hover:border-accent/30",
+      "border border-border bg-card text-foreground hover:border-accent/40 hover:text-accent shadow-sm",
     ghost: "text-muted-foreground hover:text-foreground",
   };
 

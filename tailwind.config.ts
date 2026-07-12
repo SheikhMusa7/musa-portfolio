@@ -10,30 +10,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        foreground: "#fafafa",
+        background: "#0a0a0f",
+        foreground: "#ededf2",
         muted: {
           DEFAULT: "#a1a1aa",
-          foreground: "#71717a",
+          foreground: "#8b8b96",
         },
-        border: "#27272a",
+        border: "rgba(255, 255, 255, 0.08)",
         accent: {
-          DEFAULT: "#60a5fa",
-          soft: "#3b82f6",
+          DEFAULT: "#8b5cf6",
+          soft: "#7c3aed",
+          light: "#a78bfa",
         },
         card: {
-          DEFAULT: "#141416",
-          hover: "#1a1a1e",
+          DEFAULT: "#121218",
+          hover: "#16161e",
         },
-        surface: "#18181b",
+        surface: "#1c1c26",
+        mutedbg: "#121218",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
-        display: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        display: ["Outfit", "system-ui", "-apple-system", "sans-serif"],
       },
       animation: {
         "pulse-soft": "pulse-soft 3s ease-in-out infinite",
         float: "float 6s ease-in-out infinite",
+        shimmer: "shimmer 3s linear infinite",
+        "fade-in": "fade-in 0.6s ease-out forwards",
+        "slide-up": "slide-up 0.6s ease-out forwards",
       },
       keyframes: {
         "pulse-soft": {
@@ -42,7 +47,19 @@ const config: Config = {
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-10px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-up": {
+          "0%": { opacity: "0", transform: "translateY(40px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
     },

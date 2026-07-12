@@ -1,121 +1,102 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Section from "@/components/Section";
 import MagneticButton from "@/components/MagneticButton";
 import { projects } from "@/lib/data";
 
-const categoryColors: Record<string, string> = {
-  "AI Applications": "from-blue-500/20 to-purple-500/20 border-blue-500/20",
-  "Automation Tools": "from-emerald-500/20 to-teal-500/20 border-emerald-500/20",
-  "Web Platforms": "from-orange-500/20 to-rose-500/20 border-orange-500/20",
-  "Business Solutions": "from-violet-500/20 to-pink-500/20 border-violet-500/20",
-};
-
 export default function Projects() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
 
   return (
-    <Section id="projects" className="relative">
+    <Section id="projects">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="max-w-3xl mb-16">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4 block"
+            className="kicker"
           >
-            Portfolio
+            Work
           </motion.span>
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mt-4 font-display"
           >
-            Selected{" "}
-            <span className="gradient-accent">Projects</span>
+            Shipped &<br /><span className="gradient-accent">proven.</span>
           </motion.h2>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, i) => (
+        <div ref={ref} className="space-y-16">
+          {projects.slice(0, 2).map((project, i) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{
-                duration: 0.7,
-                delay: 0.1 + i * 0.15,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="group relative glass rounded-2xl overflow-hidden card-border hover:border-accent/20 transition-all duration-500"
+              transition={{ duration: 0.7, delay: 0.15 + i * 0.15, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{ y: -4 }}
+              className={`group flex flex-col ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-10 lg:gap-16 items-center transition-[transform] duration-300`}
             >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                  categoryColors[project.category] || ""
-                }`}
-              />
-
-              <div className="relative p-8">
-                <span className="inline-block px-3 py-1 text-xs rounded-full bg-accent/10 text-accent border border-accent/20 mb-5">
-                  {project.category}
-                </span>
-
-                <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
-
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
-                      Challenge
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {project.challenge}
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
-                      Solution
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {project.solution}
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
-                      Results
-                    </h4>
-                    <p className="text-sm text-accent font-medium">
-                      {project.results}
-                    </p>
-                  </div>
+              <div className="flex-1 w-full">
+                <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden shadow-premium-lg">
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                    className="absolute inset-0"
+                  >
+                    <Image
+                      src={
+                        i === 0
+                          ? "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+                          : "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+                      }
+                      alt=""
+                      fill
+                      className="object-cover"
+                    />
+                  </motion.div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
-
+              </div>
+              <div className="flex-1 max-w-xl">
+                <span className="text-xs text-accent font-mono mb-3 block">
+                  {String(i + 1).padStart(2, "0")} / {project.category}
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4 font-display">{project.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">{project.problem}</p>
+                <p className="text-sm text-foreground/80 leading-relaxed mb-6">{project.solution}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2.5 py-1 text-xs rounded-md bg-surface text-muted-foreground"
-                    >
+                    <span key={tech} className="px-3 py-1.5 text-xs rounded-full bg-surface/80 text-muted-foreground border border-border">
                       {tech}
                     </span>
                   ))}
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <MagneticButton href={project.liveUrl} variant="primary" size="sm">
-                    Live Demo
-                  </MagneticButton>
-                  <MagneticButton href={project.codeUrl} variant="secondary" size="sm">
-                    Source Code
-                  </MagneticButton>
+                <div className="flex items-center gap-4">
+                  <span className="text-sm font-medium text-accent">{project.result}</span>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-16 text-center"
+        >
+          <MagneticButton href="#contact" variant="primary" size="lg">
+            Discuss Your Project
+            <span className="text-lg">&rarr;</span>
+          </MagneticButton>
+        </motion.div>
       </div>
     </Section>
   );

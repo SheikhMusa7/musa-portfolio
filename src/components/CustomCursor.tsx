@@ -1,17 +1,36 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { motion, useSpring } from "framer-motion";
 
-function getIsMobile(): boolean {
-  if (typeof window === "undefined") return true;
-  return window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 768;
+function subscribeIsMobile(callback: () => void) {
+  const mql = window.matchMedia("(pointer: coarse)");
+  mql.addEventListener("change", callback);
+  window.addEventListener("resize", callback);
+  return () => {
+    mql.removeEventListener("change", callback);
+    window.removeEventListener("resize", callback);
+  };
+}
+
+function getIsMobileSnapshot() {
+  return (
+    window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 768
+  );
+}
+
+function getIsMobileServerSnapshot() {
+  return true;
 }
 
 export default function CustomCursor() {
   const [visible, setVisible] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
-  const [isMobile] = useState(getIsMobile);
+  const isMobile = useSyncExternalStore(
+    subscribeIsMobile,
+    getIsMobileSnapshot,
+    getIsMobileServerSnapshot
+  );
   const cursorX = useSpring(0, { stiffness: 150, damping: 15, mass: 0.1 });
   const cursorY = useSpring(0, { stiffness: 150, damping: 15, mass: 0.1 });
   const cursorOuterX = useSpring(0, { stiffness: 80, damping: 20, mass: 0.3 });
@@ -61,7 +80,7 @@ export default function CustomCursor() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-3 h-3 bg-accent rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-3 h-3 bg-accent rounded-full pointer-events-none z-[9999]"
         style={{
           x: cursorX,
           y: cursorY,
@@ -71,7 +90,7 @@ export default function CustomCursor() {
         }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border border-accent/50 rounded-full pointer-events-none z-[9998]"
+        className="fixed top-0 left-0 w-8 h-8 border border-accent/40 rounded-full pointer-events-none z-[9998]"
         style={{
           x: cursorOuterX,
           y: cursorOuterY,

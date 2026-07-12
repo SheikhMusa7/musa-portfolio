@@ -13,9 +13,9 @@ export default function ScrollIndicator() {
       <span className="text-xs text-muted-foreground tracking-widest uppercase">
         Scroll
       </span>
-      <div className="w-[1px] h-10 bg-gradient-to-b from-muted-foreground to-transparent relative overflow-hidden">
+      <div className="w-[1px] h-10 bg-gradient-to-b from-muted-foreground/50 to-transparent relative overflow-hidden">
         <motion.div
-          className="absolute top-0 left-0 w-full h-4 bg-accent"
+          className="absolute top-0 left-0 w-full h-4 bg-accent/60"
           animate={{
             y: [0, 40, 0],
           }}
