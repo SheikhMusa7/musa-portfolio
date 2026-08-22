@@ -45,7 +45,7 @@ export default function Experience() {
           <div className="space-y-10">
             {experiences.map((exp, i) => (
               <motion.div
-                key={exp.year}
+                key={exp.title}
                 initial={{ opacity: 0, x: -30 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.1 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}

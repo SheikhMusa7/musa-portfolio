@@ -2,13 +2,13 @@ export const personalInfo = {
   name: "Musa Sheikh",
   age: 20,
   title: "CS Student, Python Developer & Aspiring Entrepreneur",
-  email: "sheikhmusa7@outlook.com",
+  email: "musaahmaddd29@gmail.com",
   phone: "+91 9596331291",
   location: "India",
   education: "B.Tech in Computer Science Engineering, SSM College of Engineering",
   social: {
     linkedin: "https://linkedin.com/in/musa-sheikh",
-    github: "https://github.com/musa-sheikh",
+    github: "https://github.com/SheikhMusa7",
     instagram: "https://instagram.com/musa.sheikh",
   },
 };
@@ -22,6 +22,82 @@ export const skills = [
   { name: "Prompt Engineering", level: 85, category: "AI Systems", icon: "PE" },
   { name: "SaaS Architecture", level: 80, category: "Product", icon: "Sa" },
   { name: "Business Strategy", level: 78, category: "Founder", icon: "BS" },
+];
+
+export const freelancerServices = [
+  {
+    icon: "🌐",
+    title: "Business Website",
+    price: "from $149",
+    timeline: "3–5 days",
+    description:
+      "A modern, fast, conversion-focused website that makes your business look professional and loads in under a second.",
+    features: [
+      "Responsive design",
+      "SEO-ready",
+      "Contact form integration",
+      "Deploy to production",
+      "1 week support",
+    ],
+    popular: false,
+  },
+  {
+    icon: "⚡",
+    title: "Web Application",
+    price: "from $399",
+    timeline: "1–3 weeks",
+    description:
+      "A full-featured web app with authentication, a database, and custom functionality — built to scale with you.",
+    features: [
+      "Full-stack build",
+      "Auth & database",
+      "API integrations",
+      "Deployment & docs",
+      "2 weeks support",
+    ],
+    popular: true,
+  },
+  {
+    icon: "🤖",
+    title: "AI / Automation System",
+    price: "from $699",
+    timeline: "2–4 weeks",
+    description:
+      "Custom AI pipelines, automation workflows, or LLM-powered features that eliminate repetitive work and save hours weekly.",
+    features: [
+      "AI integration (LLMs, CV)",
+      "Automation workflows",
+      "Custom dashboard",
+      "Full handoff & docs",
+      "30 days support",
+    ],
+    popular: false,
+  },
+];
+
+export const freelancerProcess = [
+  {
+    step: "01",
+    title: "Brief",
+    desc: "Tell me your problem. I scope it and send a plan within 24 hours — no call required unless you want one.",
+  },
+  {
+    step: "02",
+    title: "Build",
+    desc: "I ship in iterative demos. You see progress weekly, not at the end. Feedback goes straight into the next build.",
+  },
+  {
+    step: "03",
+    title: "Launch",
+    desc: "Deploy to production, hand over the code, and support you through the first weeks post-launch.",
+  },
+];
+
+export const freelancerStats = [
+  { value: "5+", label: "Shipped projects" },
+  { value: "3+", label: "Years coding" },
+  { value: "24h", label: "Response time" },
+  { value: "100%", label: "Satisfaction" },
 ];
 
 export const visionServices = [
@@ -92,40 +168,39 @@ export const projects = [
 
 export const experiences = [
   {
-    year: "2020",
-    title: "Discovered Python",
-    description: "Wrote my first Python script — an automation that saved hours of manual work. That moment defined my trajectory. I knew code was my lever.",
+    year: "2025",
+    title: "Discovered Code",
+    description:
+      "At 19, I wrote my first lines of Python. I was fascinated by how a few lines of logic could make a machine do something useful. That curiosity pulled me in deep \u2014 I knew I'd found my thing.",
     type: "learning",
   },
   {
-    year: "2021",
-    title: "Immersed in AI & Machine Learning",
-    description: "Deep-dived into neural networks, computer vision, and NLP. Built my first ML models and realized AI would reshape every industry.",
-    type: "exploration",
-  },
-  {
-    year: "2022",
-    title: "Started Web Development",
-    description: "Built full-scale web applications from scratch. Discovered the power of modern frameworks and the craft of building for the browser.",
+    year: "2025",
+    title: "First Working Project",
+    description:
+      "I built my first website \u2014 and it actually worked. Watching something I built run in the browser for the first time was the moment I thought, \u2018this is what I want to do.\u2019 I haven't looked back since.",
     type: "building",
   },
   {
-    year: "2023",
-    title: "Began Freelance & Client Work",
-    description: "Started taking on real client projects — automation systems, web platforms, AI integrations. Learnt what it takes to ship products that people actually use and pay for.",
-    type: "entrepreneurship",
+    year: "2025",
+    title: "Committed to CS",
+    description:
+      "Enrolled in B.Tech Computer Science at SSM College of Engineering. Football had already taught me discipline and how to perform under pressure \u2014 now I had a field where that same drive could compound.",
+    type: "exploration",
   },
   {
-    year: "2024",
-    title: "Mastered AI-Assisted Development",
-    description: "Leveraged AI tools to 10x engineering output. Built systems that build systems. Started thinking seriously about launching a tech business.",
+    year: "2026",
+    title: "Building With AI",
+    description:
+      "I started using AI tools to 10x my output \u2014 shipping faster, learning faster, and taking on builds I couldn't have touched alone. The gap between idea and shipped product began to close.",
     type: "innovation",
   },
   {
-    year: "2025+",
-    title: "Building Toward the Dream",
-    description: "Working toward launching a technology business that leverages AI to create transformative digital solutions. Every project is a step toward that vision.",
-    type: "future",
+    year: "Now",
+    title: "Shipping Real Products",
+    description:
+      "Building two live products \u2014 this portfolio and the-other-kashmir, a Kashmir tourism platform. Now I'm taking on client work and working toward launching a tech business of my own. Every project is a step closer.",
+    type: "entrepreneurship",
   },
 ];
 
