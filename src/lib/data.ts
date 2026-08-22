@@ -7,7 +7,7 @@ export const personalInfo = {
   location: "India",
   education: "B.Tech in Computer Science Engineering, SSM College of Engineering",
   social: {
-    linkedin: "https://linkedin.com/in/musa-sheikh",
+    linkedin: "https://www.linkedin.com/in/musaahmad7",
     github: "https://github.com/SheikhMusa7",
     instagram: "https://instagram.com/musa.sheikh",
   },
