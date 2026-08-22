@@ -53,7 +53,7 @@ export default function Projects() {
                     <Image
                       src={
                         i === 0
-                          ? "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80"
+                          ? "/projects/the-other-kashmir.png"
                           : "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
                       }
                       alt=""
