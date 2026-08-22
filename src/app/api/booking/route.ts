@@ -18,7 +18,7 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const CONTACT_EMAIL =
   process.env.CONTACT_EMAIL || "musaahmaddd29@gmail.com";
 const FROM_EMAIL =
-  process.env.FROM_EMAIL || "Musa Sheikh <onboarding@resend.dev>";
+  process.env.FROM_EMAIL || "Musa Ahmad <onboarding@resend.dev>";
 
 const RATE_WINDOW_MS = 60_000;
 const RATE_MAX = 3;
@@ -156,7 +156,7 @@ export async function POST(req: NextRequest) {
 
 export function GET() {
   return NextResponse.json(
-    { ok: true, service: "Musa Sheikh — booking endpoint" },
+    { ok: true, service: "Musa Ahmad — booking endpoint" },
     { status: 200 },
   );
 }

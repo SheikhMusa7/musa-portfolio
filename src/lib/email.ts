@@ -38,7 +38,7 @@ function shell(title: string, bodyHtml: string, footer: string): string {
         <table width="560" cellpadding="0" cellspacing="0" style="background:${CARD}; border:1px solid ${BORDER}; border-radius:14px; overflow:hidden;">
           <tr><td style="padding:26px 32px 18px; border-bottom:1px solid ${BORDER};">
             <p style="margin:0 0 4px; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:${ACCENT};">${title}</p>
-            <h1 style="margin:0; font-family:Inter,Arial,sans-serif; font-weight:700; font-size:22px; color:${TEXT}; letter-spacing:-0.01em;">Musa Sheikh</h1>
+            <h1 style="margin:0; font-family:Inter,Arial,sans-serif; font-weight:700; font-size:22px; color:${TEXT}; letter-spacing:-0.01em;">Musa Ahmad</h1>
           </td></tr>
           <tr><td style="padding:22px 32px;">
             <table width="100%" cellpadding="0" cellspacing="0">
@@ -71,7 +71,7 @@ export function renderContactEmailHtml(p: ContactEmailPayload): string {
 
 export function renderContactEmailText(p: ContactEmailPayload): string {
   return [
-    `New contact message — Musa Sheikh`,
+    `New contact message — Musa Ahmad`,
     ``,
     `Name:    ${p.name}`,
     `Email:   ${p.email}`,
@@ -104,7 +104,7 @@ export function renderBookingEmailHtml(p: BookingEmailPayload): string {
 
 export function renderBookingEmailText(p: BookingEmailPayload): string {
   return [
-    `New booking request — Musa Sheikh`,
+    `New booking request — Musa Ahmad`,
     ``,
     `Name:     ${p.name}`,
     `Email:    ${p.email}`,

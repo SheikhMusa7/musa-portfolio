@@ -15,11 +15,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Musa Sheikh | Computer Science Student, Python Developer & Aspiring Entrepreneur",
+  title: "Musa Ahmad | Computer Science Student, Python Developer & Aspiring Entrepreneur",
   description:
     "Computer Science student, Python developer, and aspiring entrepreneur building AI-powered automation systems, SaaS products, and intelligent digital solutions.",
   keywords: [
-    "Musa Sheikh",
+    "Musa Ahmad",
     "Python Developer",
     "AI Automation",
     "SaaS Development",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "Aspiring Entrepreneur",
     "Web Development",
   ],
-  authors: [{ name: "Musa Sheikh" }],
+  authors: [{ name: "Musa Ahmad" }],
   openGraph: {
-    title: "Musa Sheikh | CS Student & Aspiring Entrepreneur",
+    title: "Musa Ahmad | CS Student & Aspiring Entrepreneur",
     description:
       "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Musa Sheikh | CS Student & Aspiring Entrepreneur",
+    title: "Musa Ahmad | CS Student & Aspiring Entrepreneur",
     description:
       "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
   },

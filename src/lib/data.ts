@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Musa Sheikh",
+  name: "Musa Ahmad",
   age: 20,
   title: "CS Student, Python Developer & Aspiring Entrepreneur",
   email: "musaahmaddd29@gmail.com",
