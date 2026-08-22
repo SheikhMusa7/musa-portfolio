@@ -50,12 +50,12 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="kicker"
           >
-            Computer Science Student & Aspiring Entrepreneur
+            AI Engineer &amp; Aspiring Entrepreneur
           </motion.span>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-foreground mt-5 mb-6 font-display">
-            <TextReveal as="span" className="block" delay={0.1} stagger={0.04} accentWords={["AI", "Systems"]}>
-              Building AI Systems
+            <TextReveal as="span" className="block" delay={0.1} stagger={0.04} accentWords={["AI", "Products"]}>
+              Building AI Products
             </TextReveal>
             <TextReveal as="span" className="block" delay={0.32} stagger={0.04}>
               That Ship.
@@ -68,10 +68,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed mb-10"
           >
-            Computer Science student and Python developer passionate about AI,
-            automation, and web development. I build intelligent systems and
-            I&apos;m working toward launching a technology business that leverages
-            AI to create impactful digital solutions.
+            AI engineer from Srinagar building products and startups with Python,
+            Claude, and AI automation. B.Tech CSE student turning ideas into systems
+            that work &mdash; and working toward launching a tech business of my own.
           </motion.p>
 
           <motion.div

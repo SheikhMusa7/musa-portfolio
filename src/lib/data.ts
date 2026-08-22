@@ -1,26 +1,25 @@
 export const personalInfo = {
   name: "Musa Ahmad",
   age: 20,
-  title: "CS Student, Python Developer & Aspiring Entrepreneur",
+  title: "AI Engineer & Aspiring Entrepreneur | Building AI Products & Startups",
   email: "musaahmaddd29@gmail.com",
   phone: "+91 9596331291",
-  location: "India",
+  location: "Srinagar, Jammu & Kashmir, India",
   education: "B.Tech in Computer Science Engineering, SSM College of Engineering",
   social: {
     linkedin: "https://www.linkedin.com/in/musaahmad7",
     github: "https://github.com/SheikhMusa7",
-    instagram: "https://instagram.com/musa.sheikh",
   },
 };
 
 export const skills = [
   { name: "Python", level: 95, category: "Core Language", icon: "Py" },
-  { name: "Artificial Intelligence", level: 90, category: "AI & ML", icon: "AI" },
+  { name: "Claude & AI Automation", level: 90, category: "AI & Automation", icon: "AI" },
   { name: "Web Development", level: 88, category: "Full-Stack", icon: "WD" },
-  { name: "Automation", level: 85, category: "DevOps & Tools", icon: "Au" },
   { name: "Problem Solving", level: 92, category: "Engineering", icon: "PS" },
-  { name: "Prompt Engineering", level: 85, category: "AI Systems", icon: "PE" },
-  { name: "SaaS Architecture", level: 80, category: "Product", icon: "Sa" },
+  { name: "Prompt Engineering", level: 88, category: "AI Systems", icon: "PE" },
+  { name: "AI Products & Startups", level: 80, category: "Product", icon: "Sa" },
+  { name: "Automation", level: 85, category: "DevOps & Tools", icon: "Au" },
   { name: "Business Strategy", level: 78, category: "Founder", icon: "BS" },
 ];
 

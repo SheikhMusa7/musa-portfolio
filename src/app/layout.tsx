@@ -15,31 +15,36 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Musa Ahmad | Computer Science Student, Python Developer & Aspiring Entrepreneur",
+  title: "Musa Ahmad | AI Engineer & Aspiring Entrepreneur",
   description:
-    "Computer Science student, Python developer, and aspiring entrepreneur building AI-powered automation systems, SaaS products, and intelligent digital solutions.",
+    "AI engineer and aspiring entrepreneur building AI products and startups. Python, Claude, AI automation, and web development. B.Tech CSE student based in Srinagar, Kashmir.",
   keywords: [
     "Musa Ahmad",
-    "Python Developer",
-    "AI Automation",
-    "SaaS Development",
-    "Computer Science",
+    "AI Engineer",
     "Aspiring Entrepreneur",
+    "AI Products",
+    "Startups",
+    "Python Developer",
+    "Claude",
+    "AI Automation",
     "Web Development",
+    "Srinagar",
+    "Kashmir",
+    "B.Tech CSE",
   ],
   authors: [{ name: "Musa Ahmad" }],
   openGraph: {
-    title: "Musa Ahmad | CS Student & Aspiring Entrepreneur",
+    title: "Musa Ahmad | AI Engineer & Aspiring Entrepreneur",
     description:
-      "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
+      "Building AI products and startups. Python, Claude, AI automation, and web development. Based in Srinagar, Kashmir.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Musa Ahmad | CS Student & Aspiring Entrepreneur",
+    title: "Musa Ahmad | AI Engineer & Aspiring Entrepreneur",
     description:
-      "Building AI systems, automation tools, and digital products. Computer Science student, Python developer, and aspiring tech founder.",
+      "Building AI products and startups. Python, Claude, AI automation, and web development. Based in Srinagar, Kashmir.",
   },
   robots: {
     index: true,

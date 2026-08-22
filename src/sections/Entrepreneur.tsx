@@ -20,11 +20,11 @@ export default function Entrepreneur() {
         >
           <span className="kicker">Founder Mindset</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mt-8 mb-8 font-display leading-snug text-foreground/90">
-            &ldquo;We believe the enterprises that win the next decade won&rsquo;t treat AI,
-            the network, and security as separate programs — they&rsquo;ll run them as
-            <span className="gradient-accent"> one intelligent system.</span>&rdquo;
+            &ldquo;I&rsquo;m not just learning to code &mdash; I&rsquo;m learning to build
+            <span className="gradient-accent"> AI products and startups</span> that people actually pay for.
+            Every project is a step toward that.&rdquo;
           </h2>
-          <p className="text-sm text-muted-foreground">&mdash; The vision I&rsquo;m building toward</p>
+          <p className="text-sm text-muted-foreground">&mdash; The mission I&rsquo;m building toward</p>
         </motion.div>
       </div>
     </section>
