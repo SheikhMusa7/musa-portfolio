@@ -44,7 +44,7 @@ export default function Football() {
               className="text-sm text-muted-foreground leading-relaxed mb-8"
             >
               Football taught me how to perform under pressure, lead a team, and
-              show up consistently. These aren&rsquo;t soft skills — they&rsquo;re the same
+              show up consistently. These aren&rsquo;t soft skills - they&rsquo;re the same
               competencies that separate good engineers from great founders.
             </motion.p>
             <div ref={ref} className="space-y-3">
@@ -58,7 +58,7 @@ export default function Football() {
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
                   <span className="font-medium">{v.title}</span>
-                  <span className="text-muted-foreground">&mdash; {v.desc}</span>
+                  <span className="text-muted-foreground">- {v.desc}</span>
                 </motion.div>
               ))}
             </div>

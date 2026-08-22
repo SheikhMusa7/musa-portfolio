@@ -42,7 +42,7 @@ async function sendViaResend(payload: ContactEmailPayload): Promise<{
   error?: string;
 }> {
   if (!RESEND_API_KEY) {
-    console.warn("[contact] RESEND_API_KEY missing — skipping email send");
+    console.warn("[contact] RESEND_API_KEY missing - skipping email send");
     return { ok: false, error: "no-api-key" };
   }
   try {
@@ -51,7 +51,7 @@ async function sendViaResend(payload: ContactEmailPayload): Promise<{
       from: FROM_EMAIL,
       to: CONTACT_EMAIL,
       replyTo: payload.email,
-      subject: `New message — ${payload.subject}`,
+      subject: `New message - ${payload.subject}`,
       html: renderContactEmailHtml(payload),
       text: renderContactEmailText(payload),
       tags: [{ name: "source", value: "portfolio-contact" }],
@@ -107,10 +107,10 @@ export async function POST(req: NextRequest) {
     const data = parsed.data;
 
     if (data.website && data.website.trim().length > 0) {
-      console.log("[contact] honeypot tripped — silent success");
+      console.log("[contact] honeypot tripped - silent success");
       return NextResponse.json({
         ok: true,
-        message: "Thanks — your message has been sent. I'll get back to you within 24 hours.",
+        message: "Thanks - your message has been sent. I'll get back to you within 24 hours.",
       });
     }
 
@@ -135,12 +135,12 @@ export async function POST(req: NextRequest) {
 
     const send = await sendViaResend(payload);
     if (!send.ok) {
-      console.warn("[contact] email send failed — logged as backup. reason:", send.error);
+      console.warn("[contact] email send failed - logged as backup. reason:", send.error);
     }
 
     return NextResponse.json({
       ok: true,
-      message: "Thanks — your message has been sent. I'll get back to you within 24 hours.",
+      message: "Thanks - your message has been sent. I'll get back to you within 24 hours.",
     });
   } catch (err) {
     console.error("[contact] uncaught error:", err);
@@ -156,7 +156,7 @@ export async function POST(req: NextRequest) {
 
 export function GET() {
   return NextResponse.json(
-    { ok: true, service: "Musa Ahmad — contact endpoint" },
+    { ok: true, service: "Musa Ahmad - contact endpoint" },
     { status: 200 },
   );
 }

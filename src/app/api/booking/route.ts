@@ -42,7 +42,7 @@ async function sendViaResend(payload: BookingEmailPayload): Promise<{
   error?: string;
 }> {
   if (!RESEND_API_KEY) {
-    console.warn("[booking] RESEND_API_KEY missing — skipping email send");
+    console.warn("[booking] RESEND_API_KEY missing - skipping email send");
     return { ok: false, error: "no-api-key" };
   }
   try {
@@ -51,7 +51,7 @@ async function sendViaResend(payload: BookingEmailPayload): Promise<{
       from: FROM_EMAIL,
       to: CONTACT_EMAIL,
       replyTo: payload.email,
-      subject: `New booking — ${payload.service}`,
+      subject: `New booking - ${payload.service}`,
       html: renderBookingEmailHtml(payload),
       text: renderBookingEmailText(payload),
       tags: [{ name: "source", value: "portfolio-booking" }],
@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
     const data = parsed.data;
 
     if (data.honeypot && data.honeypot.trim().length > 0) {
-      console.log("[booking] honeypot tripped — silent success");
+      console.log("[booking] honeypot tripped - silent success");
       return NextResponse.json({
         ok: true,
         message: "Booking received. I'll confirm within 24 hours.",
@@ -135,7 +135,7 @@ export async function POST(req: NextRequest) {
 
     const send = await sendViaResend(payload);
     if (!send.ok) {
-      console.warn("[booking] email send failed — logged as backup. reason:", send.error);
+      console.warn("[booking] email send failed - logged as backup. reason:", send.error);
     }
 
     return NextResponse.json({
@@ -156,7 +156,7 @@ export async function POST(req: NextRequest) {
 
 export function GET() {
   return NextResponse.json(
-    { ok: true, service: "Musa Ahmad — booking endpoint" },
+    { ok: true, service: "Musa Ahmad - booking endpoint" },
     { status: 200 },
   );
 }

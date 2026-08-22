@@ -46,7 +46,7 @@ export const freelancerServices = [
     price: "from $399",
     timeline: "1–3 weeks",
     description:
-      "A full-featured web app with authentication, a database, and custom functionality — built to scale with you.",
+      "A full-featured web app with authentication, a database, and custom functionality - built to scale with you.",
     features: [
       "Full-stack build",
       "Auth & database",
@@ -78,7 +78,7 @@ export const freelancerProcess = [
   {
     step: "01",
     title: "Brief",
-    desc: "Tell me your problem. I scope it and send a plan within 24 hours — no call required unless you want one.",
+    desc: "Tell me your problem. I scope it and send a plan within 24 hours - no call required unless you want one.",
   },
   {
     step: "02",
@@ -107,7 +107,7 @@ export const visionServices = [
   },
   {
     title: "SaaS Product Development",
-    description: "End-to-end SaaS buildout from concept to launch — architecture, development, deployment, and iteration.",
+    description: "End-to-end SaaS buildout from concept to launch - architecture, development, deployment, and iteration.",
     icon: "📦",
   },
   {
@@ -117,26 +117,26 @@ export const visionServices = [
   },
   {
     title: "AI-Powered Web Platforms",
-    description: "Modern, high-performance web applications infused with intelligent features — built to convert and scale.",
+    description: "Modern, high-performance web applications infused with intelligent features - built to convert and scale.",
     icon: "🌐",
   },
 ];
 
 export const projects = [
   {
-    title: "The Other Kashmir — Tourism Platform",
+    title: "The Other Kashmir - Tourism Platform",
     category: "Web Platform",
-    problem: "Kashmir tourism needed a modern, trustworthy booking experience — not the dated, broken agency sites visitors are used to.",
-    solution: "Built a complete tourism platform with package browsing, seasonal guides, an AI chat assistant, inquiry and booking flows, captcha protection, rate limiting, and transactional email delivery — all from scratch.",
+    problem: "Kashmir tourism needed a modern, trustworthy booking experience - not the dated, broken agency sites visitors are used to.",
+    solution: "Built a complete tourism platform with package browsing, seasonal guides, an AI chat assistant, inquiry and booking flows, captcha protection, rate limiting, and transactional email delivery - all from scratch.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "OpenAI", "Resend", "Zod"],
-    result: "A production-ready platform with a working AI chat assistant, live email bookings, and a premium, conversion-focused design — deployable today.",
+    result: "A production-ready platform with a working AI chat assistant, live email bookings, and a premium, conversion-focused design - deployable today.",
     liveUrl: "https://github.com/SheikhMusa7/the-other-kashmir",
     codeUrl: "https://github.com/SheikhMusa7/the-other-kashmir",
   },
   {
-    title: "Musa Ahmad — Portfolio & Freelancer Hub",
+    title: "Musa Ahmad - Portfolio & Freelancer Hub",
     category: "Web Platform",
-    problem: "As an early-stage builder, I needed a portfolio that didn't just show work — it landed clients, with real booking and contact flows.",
+    problem: "As an early-stage builder, I needed a portfolio that didn't just show work - it landed clients, with real booking and contact flows.",
     solution: "Architected a performance-obsessed portfolio with WebGL shader backgrounds, magnetic interactions, scroll animations, a pricing and services section, a booking modal, contact form, captcha, rate limiting, and a Resend email backend.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js", "Resend", "Zod"],
     result: "Sub-second load times, a complete backend that delivers real bookings to my inbox, and a design that converts visitors into clients. This is the site you're on right now.",
@@ -197,7 +197,7 @@ export const guarantees = [
   {
     icon: "📦",
     title: "You own everything",
-    description: "Full source code, full deployment, full control. I hand over the keys when we're done — no lock-in, no hostage situations.",
+    description: "Full source code, full deployment, full control. I hand over the keys when we're done - no lock-in, no hostage situations.",
   },
   {
     icon: "⚡",
@@ -234,7 +234,7 @@ export const footballValues = [
   },
   {
     title: "Competitive Drive",
-    description: "The will to win, to improve every day, and to never accept mediocrity — this is what separates builders from spectators.",
+    description: "The will to win, to improve every day, and to never accept mediocrity - this is what separates builders from spectators.",
     icon: "🏆",
   },
 ];

@@ -146,7 +146,7 @@ export default function Services() {
             className="text-sm text-muted-foreground leading-relaxed mt-6 max-w-lg"
           >
             Transparent pricing, clear timelines, and code you own. No retainers,
-            no lock-in &mdash; just a plan and a build.
+            no lock-in - just a plan and a build.
           </motion.p>
         </div>
 

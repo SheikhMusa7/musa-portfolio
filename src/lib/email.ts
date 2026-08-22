@@ -26,7 +26,7 @@ export type BookingEmailPayload = {
 };
 
 function row(label: string, value: string): string {
-  return `<tr><td style="padding:7px 0; vertical-align:top; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:${MUTED}; width:32%;">${label}</td><td style="padding:7px 0; font-family:Inter,Arial,sans-serif; font-size:14px; color:${TEXT}; line-height:1.5;">${value || "—"}</td></tr>`;
+  return `<tr><td style="padding:7px 0; vertical-align:top; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:${MUTED}; width:32%;">${label}</td><td style="padding:7px 0; font-family:Inter,Arial,sans-serif; font-size:14px; color:${TEXT}; line-height:1.5;">${value || "-"}</td></tr>`;
 }
 
 function shell(title: string, bodyHtml: string, footer: string): string {
@@ -49,7 +49,7 @@ function shell(title: string, bodyHtml: string, footer: string): string {
             <p style="margin:0; font-family:ui-monospace,Menlo,monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:${MUTED};">${footer}</p>
           </td></tr>
         </table>
-        <p style="margin:16px 0 0; font-family:Inter,Arial,sans-serif; font-size:12px; color:${MUTED};">Reply directly to this email to respond — their address is in the Reply-To.</p>
+        <p style="margin:16px 0 0; font-family:Inter,Arial,sans-serif; font-size:12px; color:${MUTED};">Reply directly to this email to respond - their address is in the Reply-To.</p>
       </td></tr>
     </table>
   </body>
@@ -71,7 +71,7 @@ export function renderContactEmailHtml(p: ContactEmailPayload): string {
 
 export function renderContactEmailText(p: ContactEmailPayload): string {
   return [
-    `New contact message — Musa Ahmad`,
+    `New contact message - Musa Ahmad`,
     ``,
     `Name:    ${p.name}`,
     `Email:   ${p.email}`,
@@ -104,7 +104,7 @@ export function renderBookingEmailHtml(p: BookingEmailPayload): string {
 
 export function renderBookingEmailText(p: BookingEmailPayload): string {
   return [
-    `New booking request — Musa Ahmad`,
+    `New booking request - Musa Ahmad`,
     ``,
     `Name:     ${p.name}`,
     `Email:    ${p.email}`,

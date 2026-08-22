@@ -69,7 +69,7 @@ export default function Hero() {
             className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed mb-10"
           >
             Need a website, an AI tool, or an automation system? I build fast,
-            modern, production-ready products &mdash; from a blank file to launch.
+            modern, production-ready products - from a blank file to launch.
             No agency overhead, no bloated timelines, no surprises. Just clean work
             that goes live and brings you customers.
           </motion.p>

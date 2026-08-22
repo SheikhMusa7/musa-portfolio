@@ -59,7 +59,7 @@ export default function Vision() {
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-sm text-muted-foreground leading-relaxed mb-8"
             >
-              I move past pilots and demos, embedding AI into operations, decisions, and products — with guardrails
+              I move past pilots and demos, embedding AI into operations, decisions, and products - with guardrails
               that businesses can trust.
             </motion.p>
             <div className="space-y-5">
