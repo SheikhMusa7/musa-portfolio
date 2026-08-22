@@ -50,15 +50,15 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="kicker"
           >
-            AI Engineer &amp; Aspiring Entrepreneur
+            AI Engineer &middot; Building Products &amp; Startups
           </motion.span>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-foreground mt-5 mb-6 font-display">
-            <TextReveal as="span" className="block" delay={0.1} stagger={0.04} accentWords={["AI", "Products"]}>
-              Building AI Products
+            <TextReveal as="span" className="block" delay={0.1} stagger={0.04} accentWords={["Ideas", "Products"]}>
+              I Turn Ideas Into
             </TextReveal>
-            <TextReveal as="span" className="block" delay={0.32} stagger={0.04}>
-              That Ship.
+            <TextReveal as="span" className="block" delay={0.32} stagger={0.04} accentWords={["Ship"]}>
+              Products That Ship.
             </TextReveal>
           </h1>
 
@@ -68,9 +68,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed mb-10"
           >
-            AI engineer from Srinagar building products and startups with Python,
-            Claude, and AI automation. B.Tech CSE student turning ideas into systems
-            that work &mdash; and working toward launching a tech business of my own.
+            Need a website, an AI tool, or an automation system? I build fast,
+            modern, production-ready products &mdash; from a blank file to launch.
+            No agency overhead, no bloated timelines, no surprises. Just clean work
+            that goes live and brings you customers.
           </motion.p>
 
           <motion.div
