@@ -93,10 +93,10 @@ export const freelancerProcess = [
 ];
 
 export const freelancerStats = [
-  { value: "5+", label: "Shipped projects" },
-  { value: "3+", label: "Years coding" },
+  { value: "2", label: "Live projects shipped" },
+  { value: "2025", label: "Started coding" },
   { value: "24h", label: "Response time" },
-  { value: "100%", label: "Satisfaction" },
+  { value: "$149", label: "Starting price" },
 ];
 
 export const visionServices = [
@@ -124,44 +124,24 @@ export const visionServices = [
 
 export const projects = [
   {
-    title: "AI Content Intelligence Platform",
-    category: "AI Application",
-    problem: "Businesses spend 60% of their marketing budget on content creation with inconsistent quality and slow turnaround.",
-    solution: "Built an AI-native platform using LLMs and computer vision that generates, optimizes, and personalizes content across text, image, and video formats — all from a single pipeline.",
-    technologies: ["Python", "OpenAI", "Next.js", "PostgreSQL", "Redis", "Docker"],
-    result: "Reduced content production time by 80%, maintained human-level quality, and scaled to serve 12+ businesses.",
-    liveUrl: "#",
-    codeUrl: "#",
+    title: "The Other Kashmir — Tourism Platform",
+    category: "Full-Stack Web App",
+    problem: "Kashmir tourism needed a modern, trustworthy booking experience — not the dated, broken agency sites visitors are used to.",
+    solution: "Built a complete tourism platform with package browsing, seasonal guides, an AI chat assistant, inquiry and booking flows, captcha protection, rate limiting, and transactional email delivery — all from scratch.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "OpenAI", "Resend", "Zod"],
+    result: "A production-ready platform with a working AI chat assistant, live email bookings, and a premium, conversion-focused design — deployable today.",
+    liveUrl: "https://github.com/SheikhMusa7/the-other-kashmir",
+    codeUrl: "https://github.com/SheikhMusa7/the-other-kashmir",
   },
   {
-    title: "Enterprise Automation Suite",
-    category: "Automation Tool",
-    problem: "Teams waste 30% of their week on repetitive manual workflows — data entry, reporting, approvals, and notifications.",
-    solution: "Developed a modular automation framework with drag-and-drop workflow builder, API integrations, and AI-powered decision nodes.",
-    technologies: ["Python", "FastAPI", "Celery", "Docker", "React", "PostgreSQL"],
-    result: "Automated 95% of routine tasks, saving 40+ hours per week across departments, with 99.9% reliability.",
-    liveUrl: "#",
-    codeUrl: "#",
-  },
-  {
-    title: "High-Performance Web Platform",
+    title: "Musa Ahmad — Portfolio & Freelancer Hub",
     category: "Web Platform",
-    problem: "Businesses lose 40% of visitors due to slow, bloated websites that fail to convert.",
-    solution: "Architected a performance-obsessed web platform with sub-second load times, perfect Lighthouse scores, and conversion-optimized UX patterns.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase", "Vercel"],
-    result: "98 Lighthouse score, 40% improvement in conversion rates, and 0.8s average load time across all pages.",
-    liveUrl: "#",
-    codeUrl: "#",
-  },
-  {
-    title: "SMB Business Intelligence Suite",
-    category: "Business Solution",
-    problem: "Small businesses can't afford enterprise BI tools but desperately need data-driven decision-making.",
-    solution: "Created an affordable, accessible AI analytics platform with natural-language querying, automated insights, and predictive forecasting.",
-    technologies: ["Python", "TensorFlow", "Streamlit", "MongoDB", "AWS Lambda"],
-    result: "Helped 15+ businesses improve operational efficiency by 60% on average, with a 4.8/5 user satisfaction score.",
-    liveUrl: "#",
-    codeUrl: "#",
+    problem: "As an early-stage builder, I needed a portfolio that didn't just show work — it landed clients, with real booking and contact flows.",
+    solution: "Architected a performance-obsessed portfolio with WebGL shader backgrounds, magnetic interactions, scroll animations, a pricing and services section, a booking modal, contact form, captcha, rate limiting, and a Resend email backend.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js", "Resend", "Zod"],
+    result: "Sub-second load times, a complete backend that delivers real bookings to my inbox, and a design that converts visitors into clients. This is the site you're on right now.",
+    liveUrl: "https://github.com/SheikhMusa7/musa-portfolio",
+    codeUrl: "https://github.com/SheikhMusa7/musa-portfolio",
   },
 ];
 
@@ -203,24 +183,36 @@ export const experiences = [
   },
 ];
 
-export const testimonials = [
+export const guarantees = [
   {
-    name: "Sarah Chen",
-    role: "CTO, TechVentures",
-    content: "Musa thinks like a founder, not a freelancer. He understood our product vision immediately and delivered an AI system that fundamentally changed how we operate. His technical range is exceptional.",
-    avatar: "SC",
+    icon: "💬",
+    title: "You talk to me directly",
+    description: "No project manager, no account rep, no handoff to a junior. The person you brief is the person who builds. Decisions move fast.",
   },
   {
-    name: "Arjun Patel",
-    role: "Founder, DigitalFirst",
-    content: "Working with Musa felt like having a technical co-founder. He didn't just build what we asked — he challenged our assumptions and delivered something better. Exactly the mindset you want in a builder.",
-    avatar: "AP",
+    icon: "👁️",
+    title: "Transparent pricing",
+    description: "You see the price before we start. No surprise invoices, no scope creep charges, no retainers. What we agree is what you pay.",
   },
   {
-    name: "Priya Sharma",
-    role: "Engineering Lead, CloudScale",
-    content: "Musa's ability to bridge AI engineering and product thinking is rare. He doesn't just know the tech — he knows how to apply it to real business problems. Exactly the kind of person you want building your core systems.",
-    avatar: "PS",
+    icon: "📦",
+    title: "You own everything",
+    description: "Full source code, full deployment, full control. I hand over the keys when we're done — no lock-in, no hostage situations.",
+  },
+  {
+    icon: "⚡",
+    title: "Fast turnaround",
+    description: "A business website ships in days, not months. You see progress weekly with working demos, not a black box for six weeks.",
+  },
+  {
+    icon: "🛡️",
+    title: "Real backend, not a mockup",
+    description: "Forms that send emails. Captcha that blocks bots. Rate limiting that holds up. I ship production-grade backends, not pretty shells.",
+  },
+  {
+    icon: "🤝",
+    title: "Support after launch",
+    description: "1–4 weeks of support included with every project. If something breaks, I fix it. You're not abandoned the moment we go live.",
   },
 ];
 
