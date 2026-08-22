@@ -125,7 +125,7 @@ export const visionServices = [
 export const projects = [
   {
     title: "The Other Kashmir — Tourism Platform",
-    category: "Full-Stack Web App",
+    category: "Web Platform",
     problem: "Kashmir tourism needed a modern, trustworthy booking experience — not the dated, broken agency sites visitors are used to.",
     solution: "Built a complete tourism platform with package browsing, seasonal guides, an AI chat assistant, inquiry and booking flows, captcha protection, rate limiting, and transactional email delivery — all from scratch.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "OpenAI", "Resend", "Zod"],
