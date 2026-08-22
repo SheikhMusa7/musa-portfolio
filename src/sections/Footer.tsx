@@ -22,7 +22,6 @@ export default function Footer() {
             {[
               { label: "LinkedIn", href: personalInfo.social.linkedin },
               { label: "GitHub", href: personalInfo.social.github },
-              { label: "Instagram", href: personalInfo.social.instagram },
             ].map((link) => (
               <a
                 key={link.label}
